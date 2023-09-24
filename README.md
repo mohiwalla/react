@@ -1,27 +1,9 @@
-# React + TypeScript + Vite
+# Learning React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository for keeping track of my learnings.
 
-Currently, two official plugins are available:
+## What I learnt today?
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+| Date | What I leant? | What I made? | Overall Experience... |
+| ---- | -------- | -------- | ------------- |
+| 24-09-2023   | I learnt to use `useState` hook along with passing the current state of a component to the `child` element | I made [ListGroup.tsx](https://github.com/mohiwalla/react/blob/mohiwalla/src/components/ListGroup.tsx) and [Search.tsx](https://github.com/mohiwalla/react/blob/mohiwalla/src/components/Search.tsx) file today to implement a search in `<ul>` (unordered List) and show the results mathing the keyword in real time. | It is different for me to `think in React ✌` and as of now making the same application seem to be easier for me to make in Vanila JS instead. But `GPT` helped me. 😋|
