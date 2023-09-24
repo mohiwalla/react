@@ -2,7 +2,6 @@
 
 This repository for keeping track of my learnings.
 
-
 <br>
 
 ## What I learnt today?
