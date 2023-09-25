@@ -11,19 +11,17 @@ export default function ListGroup({ items, heading, searchKey }: listArgs) {
 
     return (
         <>
-            <h1>{heading}</h1>
-            {items.length === 0 && (
-                <h3 className="user-select-none">
-                    The list is empty ¯\_(ツ)_/¯
-                </h3>
-            )}
+            <h1 className="text-danger">{heading}</h1>
+            {items.length === 0 && <h3>The list is empty ¯\_(ツ)_/¯</h3>}
             <ul className="list-group w-25">
                 {items.map((item: string, index: number) => {
-                    const toBeDisplayed: boolean = item.includes(searchKey);
+                    const toBeDisplayed: boolean = item
+                        .toLowerCase()
+                        .includes(searchKey.toLowerCase());
                     return (
                         toBeDisplayed && (
                             <li
-                                onClick={() => {
+                                onMouseDown={() => {
                                     setSelectedIndex(index);
                                 }}
                                 style={{ cursor: "pointer" }}
@@ -41,4 +39,4 @@ export default function ListGroup({ items, heading, searchKey }: listArgs) {
             </ul>
         </>
     );
-};
+}
